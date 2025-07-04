@@ -11,15 +11,16 @@
 
   <!--Navigation Bar -->
   <nav>
+     <div class="nav-name">&lt;/Osnat&gt;</div>
     <ul>
       <li><a href="#home">Home</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact Me</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 
-  <!-- About Section -->
+  <!-- Home Section -->
   <section id="home" class="home-section">
   <div class="home-container">
     <img src="Picture/me.jpg" alt="Profile Picture" class="profile-pic">
@@ -31,6 +32,7 @@
   </div>
   </section>
 
+  <!-- Skills Section -->
  <section id="skills">
     <div class="skills-container">
   <h2>Skills</h2>
@@ -151,6 +153,18 @@
   </div>
 </section>
 
+<!-- Contact Form Section -->
+<section id="contact">
+  <h2>Get in Touch</h2>
+  <form id="contact-form" class="contact-form">
+    <input type="text" name="name" placeholder="Your Name" required autocomplete="name" />
+    <input type="email" name="email" placeholder="Your Email" required autocomplete="email" />
+    <textarea name="message" rows="6" placeholder="Your Message" required autocomplete="off"></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+  <p id="form-response"></p>
+</section>
+
 
   <!--Footer -->
   <footer>
@@ -158,7 +172,7 @@
         <p>&copy; 2025 Aldrin John Revale. All rights reserved.</p>
       </div>
 
-    <div id="contact" class="footer-contact">
+    <div id="footer-contact" class="footer-contact">
       <div class="social-icons">
         <a href="mailto:aldrin@email.com" target="_blank" aria-label="Email"><i class="fas fa-envelope"></i></a>
         <a href="https://github.com/yourusername" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
@@ -169,5 +183,10 @@
 
   </footer>
 
+<div id="popup-message" class="popup-message"></div>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js"></script>
+<script src="email.js"></script>
 </body>
+
 </html>
