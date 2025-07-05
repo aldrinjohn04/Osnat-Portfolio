@@ -93,7 +93,7 @@ html {
   .menu-toggle {
     display: block;
     font-size: 2rem;
-    padding: 0.8rem; /* binawasan din */
+    padding: 0.8rem;
   }
 
   nav ul {
@@ -127,12 +127,6 @@ html {
   }
 }
 
-
-
-
-
-
-  
   /* ===== Sections ===== */
   section {
     padding: 4rem 2rem;
