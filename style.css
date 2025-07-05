@@ -73,6 +73,9 @@ html {
 
   .hamburger {
   display: none;
+  font-size: 2.2rem;
+  color: #04c0ff;
+  cursor: pointer;
 }
 
   @media (max-width: 768px) {
