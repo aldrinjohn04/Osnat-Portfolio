@@ -73,10 +73,10 @@ html {
 
 .menu-toggle {
   display: none;
-  font-size: 2rem; 
+  font-size: 1.8rem; 
   color: #04c0ff;
   cursor: pointer;
-  padding: 1rem; 
+  padding: 0.8rem; 
   margin-right: 1rem;
   transition: transform 0.3s ease;
 }
