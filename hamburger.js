@@ -1,10 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const hamburger = document.getElementById('hamburger');
-  const navLinks = document.getElementById('nav-links');
+  const toggleBtn = document.getElementById("menu-toggle");
+  const navLinks = document.getElementById("nav-links");
 
-  if (hamburger && navLinks) {
-    hamburger.addEventListener('click', () => {
-      navLinks.classList.toggle('active');
-    });
-  }
+  toggleBtn.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+    toggleBtn.classList.toggle("active"); 
+  });
 });

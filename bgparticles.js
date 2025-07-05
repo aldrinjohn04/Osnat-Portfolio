@@ -27,12 +27,15 @@ particlesJS("particles-home", {
       }
     },
     interactivity: {
-      events: {
-        onhover: {
-          enable: true,
-          mode: "repulse"
-        }
-      }
+  events: {
+    onhover: {
+      enable: false
     },
+    onclick: {
+      enable: false
+    },
+    resize: true
+  }
+},
     retina_detect: true
   });

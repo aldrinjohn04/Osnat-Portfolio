@@ -71,21 +71,23 @@ html {
     color: #3399ff;
   }
 
-.hamburger {
+.menu-toggle {
   display: none;
-  font-size: 2rem;
+  font-size: 2.2rem; 
   color: #04c0ff;
   cursor: pointer;
-
-  padding: 0.5rem;
-  line-height: 1;
-  z-index: 1100; 
-  position: relative;
+  padding: 1rem; 
+  margin-right: 1rem;
+  transition: transform 0.3s ease;
 }
 
 
-@media (max-width: 768px) {
-  .hamburger {
+.menu-toggle.active i {
+  transform: rotate(90deg);
+}
+
+@media screen and (max-width: 768px) {
+  .menu-toggle {
     display: block;
   }
 
@@ -93,25 +95,35 @@ html {
     display: none;
     position: absolute;
     top: 100%;
-    right: 0;
-    background: #101010;
-    width: 100%;
+    left: 0;
     flex-direction: column;
-    align-items: center;
-    z-index: 1000;
-    pointer-events: auto;
+    background-color: #101010;
+    width: 100%;
+    padding: 1rem 0;
+    gap: 1rem;
+    text-align: center;
+    padding-right: 0;
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+    transition: all 0.3s ease;
   }
 
   nav ul.active {
     display: flex;
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
   }
 
-  nav ul li {
-    width: 100%;
-    text-align: center;
-    padding: 1rem 0;
+  nav ul li a {
+    font-size: 1.2rem;
+    padding: 0.5rem 0;
   }
 }
+
+
+
 
 
 
