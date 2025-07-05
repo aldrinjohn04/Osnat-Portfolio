@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-  emailjs.init('_bzyrYKhUQcehinHM'); // your public key
+  emailjs.init('_bzyrYKhUQcehinHM');
 
   const form = document.getElementById('contact-form');
   const popupMessage = document.getElementById('popup-message');
