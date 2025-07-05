@@ -87,14 +87,19 @@ html {
 }
 
 @media screen and (max-width: 768px) {
+  nav {
+    padding: 0.5rem 1rem;
+  }
   .menu-toggle {
     display: block;
+    font-size: 2rem;
+    padding: 0.8rem; /* binawasan din */
   }
 
   nav ul {
     display: none;
     position: absolute;
-    top: 100%;
+    top: 55px;
     left: 0;
     flex-direction: column;
     background-color: #101010;
